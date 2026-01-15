@@ -11,6 +11,8 @@ public class StudentMapper {
         user.setEmail(dto.getEmail());
         user.setPassword(dto.getPassword());
         user.setRole(dto.getRole());
+        user.setAttendance(dto.getAttendance());
+        user.setMarks(dto.getMarks());
         return user;
     }
 
@@ -19,7 +21,9 @@ public class StudentMapper {
                 user.getUsername(),
                 user.getEmail(),
                 user.getRole(),
-                user.getPassword());
+                user.getPassword(),
+                user.getAttendance(),
+                user.getMarks());
 
     }
 }
